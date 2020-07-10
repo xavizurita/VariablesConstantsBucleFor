@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>VariablesFase3</title>
+       
+    <script>
+       
+        
+        var AnyTraspas = 1948, AnyNaixement =1967, VariableAnyTraspas = 0, Resultat = 0;
+        var Bucle = 0, inici = 0, NoTraspas = 0;
+        var ConfirmacioAny = true;
+        bucle = AnyNaixement - AnyTraspas;
+        Resultat = AnyNaixement%4
+        
+        document.write("Año inicio: " + AnyTraspas + " -- Año nacimiento: " + AnyNaixement + "<br>");
+       //  document.write(Resultat + "<br>");
+        if (Resultat == 0) {
+            ConfirmacioAny=true;
+        } else {
+            ConfirmacioAny=false;    
+        }
+        
+ 
+        if (ConfirmacioAny == true) {
+            TexteTrue = "Año nacimiento fue Bisiesto: " 
+             document.write(TexteTrue + "<br>");
+		} else {
+            TexteFalse = "Año nacimiento NO fue Bisiesto: " 
+            document.write(TexteFalse + "<br>");
+		}
+                 
+
+        for (inici = 0; inici<=bucle; inici++) {
+			Resultat = (AnyTraspas + inici)%4;
+		  
+            //if (resultat >=1) { 
+		  if (Resultat == 1 || Resultat == 2 || Resultat == 3) {  
+				NoTraspas = NoTraspas + 1 ;
+			 } else {
+				VariableAnyTraspas= VariableAnyTraspas + 1 ;
+                 document.write("<br>")
+				document.write("<br>" + (AnyTraspas + inici) + "<br");
+			 }
+			}
+
+
+  
+    </script>
+</head>
+<body>
+</body>
+</html>
+
+
+		
+				
+
+
+			
+
